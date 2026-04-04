@@ -8,9 +8,7 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 
-/* MARK NAME Seu Nome Aqui */
-/* MARK NAME Nome de Outro Integrante Aqui */
-/* MARK NAME E Etc */
+/* MARK NAME Ítalo Leal Lana Santos */
 
 /****************************************************************
  * Shell xv6 simplificado

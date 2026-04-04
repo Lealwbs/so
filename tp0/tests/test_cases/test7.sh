@@ -4,11 +4,11 @@ set -eu
 if [ ! -s sh ] ; then exit 1 ; fi
 
 cat > tests/script.sh <<-EOF
-cat sh.c | sort | uniq | wc -l
-cat sh.c | sort | uniq | wc -l
-cat sh.c | sort | uniq | wc -l
-cat sh.c | sort | uniq | wc -l
-cat sh.c | sort | uniq | wc -l
+cat ./src/sh.c | sort | uniq | wc -l
+cat ./src/sh.c | sort | uniq | wc -l
+cat ./src/sh.c | sort | uniq | wc -l
+cat ./src/sh.c | sort | uniq | wc -l
+cat ./src/sh.c | sort | uniq | wc -l
 EOF
 
 cat tests/script.sh | bash > tests/bash.out

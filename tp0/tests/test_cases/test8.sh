@@ -4,14 +4,14 @@ set -eu
 if [ ! -s sh ] ; then exit 1 ; fi
 
 cat > tests/script.sh <<-EOF
-cat sh.c | sort | uniq | wc -l > tests/1.tmp
-cat sh.c | sort | uniq | wc -l > tests/2.tmp
-cat sh.c | sort | uniq | wc -l > tests/3.tmp
-cat sh.c | sort | uniq | wc -l > tests/4.tmp
-cat sh.c | sort | uniq | wc -l > tests/5.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/1.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/2.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/3.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/4.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/5.tmp
 EOF
 
-cat sh.c | sort | uniq | wc -l > tests/0.tmp
+cat ./src/sh.c | sort | uniq | wc -l > tests/0.tmp
 cat tests/script.sh | ./sh
 rm -f tests/script.sh
 
